@@ -162,6 +162,46 @@ a, ul {
     margin-bottom: 48px;
 }
 
+.title-html::before {
+    content: '';
+    margin-bottom: 16px;
+    display: block;
+    width: 45px;
+    height: 44px;
+    background: url('../resources/html.svg.svg') no-repeat center;
+    background-size: cover;
+}
+
+.title-js::before {
+    content: '';
+    margin-bottom: 16px;
+    display: block;
+    width: 45px;
+    height: 44px;
+    background: url('../resources/js.svg.svg') no-repeat center;
+    background-size: cover;
+}
+
+.title-library::before {
+    content: '';
+    margin-bottom: 16px;
+    display: block;
+    width: 45px;
+    height: 44px;
+    background: url('../resources/frame-works.svg.svg') no-repeat center;
+    background-size: cover;
+}
+
+.title-mob::before {
+    content: '';
+    margin-bottom: 16px;
+    display: block;
+    width: 45px;
+    height: 44px;
+    background: url('../resources/adaptive.svg.svg') no-repeat center;
+    background-size: cover;
+}
+
 .competencies-list__item:not(:last-child) {
     margin-bottom: 60px;
 }
