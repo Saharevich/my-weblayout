@@ -82,7 +82,7 @@ a, ul {
     padding-bottom: 94px;
     flex-direction: column-reverse;
     height: 765px;
-    background-image: url('/resources/head-img.jpg');
+    background-image: url('../resources/head-img.jpg');
     background-repeat: no-repeat;
     background-position:  center;
     background-size: cover;
@@ -120,15 +120,15 @@ a, ul {
 }
 
 .projects-realhome {
-    background: url('/resources/realhome-img.png') no-repeat center;
+    background: url('../resources/realhome-img.png') no-repeat center;
 }
 
 .projects-glass {
-    background: url('/resources/glass-img.png') no-repeat center;
+    background: url('../resources/glass-img.png') no-repeat center;
 }
 
 .projects-fesiyen {
-    background: url('/resources/fesiyen-img.png') no-repeat center;
+    background: url('../resources/fesiyen-img.png') no-repeat center;
 }
 
 .projects-item__title {
@@ -248,7 +248,7 @@ a, ul {
     height: 717px;
     right: 0;
     top: 0;
-    background: url('/resources/cuate.png') no-repeat center center;
+    background: url('../resources/cuate.png') no-repeat center center;
     border-radius: 0px 30px 30px 0px;
 }
 
