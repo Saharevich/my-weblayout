@@ -119,6 +119,16 @@ a, ul {
     border-radius: 30px;
 }
 
+.projects-link {
+    display: block;
+    color: inherit; 
+    transition: color 0.3s ease-in-out;
+}
+
+.projects-link:hover {
+    color: #1bff07;
+}
+
 .projects-realhome {
     background: url('../resources/realhome-img.png') no-repeat center;
 }
