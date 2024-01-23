@@ -1,0 +1,82 @@
+.projects-title {
+    margin-bottom: 40px;
+}
+
+.projects-list {
+    margin-bottom: 80px;
+}
+
+.projects__item {
+    padding: 50px 50px;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 450px;
+    border-radius: 30px;
+}
+
+.projects-link {
+    display: block;
+    color: inherit; 
+    transition: color 0.3s ease-in-out;
+}
+
+.projects-link:hover {
+    color: #ffa755;
+}
+
+.projects-metrika {
+    background: url('../resources/metrica-img.png') no-repeat 50%;
+    background-size: cover;
+}
+
+.projects-lionic {
+    background: linear-gradient(rgba(255, 255, 255, 0.254), rgba(0, 0, 0, 0.9)), url('../resources/lionic-img.png') no-repeat left top;
+    background-size: cover;
+}
+
+.projects-evklid {
+    background: linear-gradient(rgba(255, 255, 255, 0.254), rgba(0, 0, 0, 0.9)), url('../resources/evklid-img.png') no-repeat left top;
+    background-size: cover;
+}
+
+.projects-item__title {
+    margin-bottom: 5px;
+    font-size: 35px;
+    line-height: 45.5px;
+}
+
+.projects-item__descr {
+    font-size: 30px;
+    line-height: 39px;
+}
+
+.projects-item__themes {
+    padding: 10px 20px;
+    position: absolute;
+    top: 50px;
+    left: 45px;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000;
+    background-color: #f4861e;
+    border-radius: 50px;
+}
+
+.projects-btn {
+    padding: 57px 0px;
+    width: 51%;
+    font-size: 30px;
+    line-height: 39px;
+    text-align: center;
+    background-color: #f4861e;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.projects-btn:hover {
+    color: #f4861e;
+    background-color: #000;
+    outline: 1px solid #f4861e;
+}

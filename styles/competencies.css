@@ -1,0 +1,72 @@
+.competencies__title {
+    margin-bottom: 82px;
+}
+
+.title-html::before {
+    content: '';
+    margin-bottom: 16px;
+    display: block;
+    width: 45px;
+    height: 44px;
+    background: url('../resources/html.svg.svg') no-repeat center;
+    background-size: cover;
+}
+
+.title-js::before {
+    content: '';
+    margin-bottom: 16px;
+    display: block;
+    width: 45px;
+    height: 44px;
+    background: url('../resources/js.svg.svg') no-repeat center;
+    background-size: cover;
+}
+
+.title-library::before {
+    content: '';
+    margin-bottom: 16px;
+    display: block;
+    width: 45px;
+    height: 44px;
+    background: url('../resources/frame-works.svg.svg') no-repeat center;
+    background-size: cover;
+}
+
+.title-mob::before {
+    content: '';
+    margin-bottom: 10px;
+    display: block;
+    width: 45px;
+    height: 44px;
+    background: url('../resources/adaptive.svg.svg') no-repeat center;
+    background-size: cover;
+}
+
+.competencies-list {
+    flex-wrap: wrap;
+    row-gap: 50px;
+    column-gap: 25px;
+}
+
+.competencies-list__item {
+    width: calc(50% - 20px);
+}
+
+.competencies-list__title {
+    margin-bottom: 15px;
+    max-width: 750px;
+    font-size: 35px;
+    line-height: 45.5px;
+    color: #f4861e;
+}
+
+.title-library {
+    margin-bottom: 55px;
+}
+
+.competencies-list__descr {
+    max-width: 780px;
+    font-size: 22px;
+    line-height: 28.6px;
+    letter-spacing: -1.3px;
+}

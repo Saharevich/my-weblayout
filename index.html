@@ -9,19 +9,20 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Inter:wght@500;600;700&family=Manrope&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/media.css">
     
     <title>Привет, Я - Разработчик!</title>
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <nav class="header__nav flex">
+            <div class="header__content flex">
                 <div class="header__logo">
                     <a href="#" class="header__logo__link">
                         SAHAR
                     </a>
                 </div>
-               
+            <nav class="header__nav">
                 <ul class="header__list flex">
                     <li class="header__item">
                         <a href="#projects" class="header__link">
@@ -45,6 +46,58 @@
                     </li>
                 </ul>
             </nav>
+            <button class="burger-btn js-burger-btn"></button>
+            <div class="burger burger__close js-burger">
+                <div class="burger-content js-burger__content">
+                    <div class="burger__logo">
+                        <a href="#" class="burger__logo__link">
+                            SAHAR
+                        </a>
+                    </div>
+                    <nav class="burger__nav">
+                        <ul class="burger__list flex">
+                            <li class="burger__item">
+                                <a href="#projects" class="burger__link">
+                                    портфолио
+                                </a>
+                            </li>
+                            <li class="burger__item">
+                                <a href="#competencies" class="burger__link">
+                                    компетенции
+                                </a>
+                            </li>
+                            <li class="burger__item">
+                                <a href="#services" class="burger__link">
+                                    услуги
+                                </a>
+                            </li>
+                            <li class="burger__item">
+                                <a href="#contacts" class="burger__link">
+                                    контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="social">
+                        <h3 class="social__title">
+                            для связи:
+                        </h3>
+                        <ul class="social__list flex">
+                            <li class="social__item">
+                                <a href="t.me/@ZUCKERVO" class="social__link">telegram</a>
+                            </li>
+                            <li class="social__link">
+                                <a href="https://www.instagram.com/sakharevich_v.s?utm_source=qr&igsh=YmhkZzMxeHU5aTRr" class="social__link">instagram</a>
+                            </li>
+                            <li class="social__link">
+                                <a href="mailto:vova.saharevich2014@gmail.com" class="social__link">mail</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+               
+            </div>
         </div>
     </header>
 
@@ -57,7 +110,7 @@
                     Разрабатываю имиджевые сайты для малого и&nbsp;среднего бизнеса, которые повышают престиж компании и&nbsp;позволяют выделиться на&nbsp;фоне конкурентов
                 </p>
                 <h1 class="main__title">
-                    Привет, я&nbsp;Вова&nbsp;&mdash; фронтенд разработчик и&nbsp;дизайнер сайтов
+                    Привет, Я - фронтенд разработчик и дизайнер сайтов
                 </h1>
             </div>
         </div>
@@ -69,38 +122,43 @@
                 Самые свежие проекты
             </h2>
             <ul class="projects-list">
-                <li class="projects__item projects-realhome flex">
-                    <a href="#" class="projects-link">
+                <li class="projects__item projects-metrika flex">
+                    <a href="https://saharevich.github.io/module-1/" class="projects-link">
                         <h3 class="projects-item__title">
-                            Realhome
+                            Метрика
                         </h3>
                         <p class="projects-item__descr">
                             дизайн,верстка, настройка
                         </p>
                     </a>
+                    <p class="projects-item__themes">дизайн интерьера</p>
                 </li>
-                <li class="projects__item projects-glass flex">
-                    <a href="#" class="projects-link">
+                <li class="projects__item projects-lionic flex">
+                    <a href="https://saharevich.github.io/Lionic/" class="projects-link">
                         <h3 class="projects-item__title">
-                            GLASS
+                            Lionic
                         </h3>
                         <p class="projects-item__descr">
-                            разработка интерфейса
+                            верстка, настройка
                         </p>
                     </a>
+                    <p class="projects-item__themes">презентация продукта</p>
                 </li>
-                <li class="projects__item projects-fesiyen flex">
-                    <a href="#" class="projects-link">
+                <li class="projects__item projects-evklid flex">
+                    <a href="https://saharevich.github.io/weblayout/" class="projects-link">
                         <h3 class="projects-item__title">
-                            Fesiyen
+                            Евклид
                         </h3>
                         <p class="projects-item__descr">
-                            разработка интерфейса
+                            верстка, настройка
                         </p>
                     </a>
+                    <p class="projects-item__themes">строительство и ремонт</p>
                 </li>
             </ul>
-            <button type="button" class="projects-btn">Смотреть все проекты</button>
+            <button type="button" class="projects-btn">
+               Смотреть все проекты 
+            </button>
         </div>
     </section>
 
@@ -109,7 +167,7 @@
             <h2 class="competencies__title section-title">
                 Мои компетенции
             </h2>
-            <ul class="competencies-list">
+            <ul class="competencies-list flex">
                 <li class="competencies-list__item">
                     <h3 class="competencies-list__title title-html">
                         HTML и CSS
@@ -151,25 +209,31 @@
             <h2 class="services__title">
                 Помогаю реализовать широкий спектр задач
             </h2>
-            <ul class="services-list">
+            <ul class="services-list flex">
                 <li class="services-list__item">
                     <div class="services-list__img">
-                        <img src="./resources/services-img__dev.png" alt="Пример работы" class="services-list__picture">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="./resources/services-dev-mob.png">
+                            <img src="./resources/services-img__dev.png" alt="Пример работы" class="services-list__picture">
+                        </picture>
                     </div>
-                    <div class="services-list__text">
+                    <div class="services-list__text flex">
                         <h3 class="services-list__title">
                             Разработка сайта под ключ
                         </h3>
                         <p class="services-list__descr">
-                            Это процесс создания дизайна веб-сайтов, созданный для удобства пользователя и&nbsp;решения бизнес-задач. Сайты должны быть понятными и&nbsp;удобными, ведь чем понятнее сайт, тем быстрее пользователь совершит целевое действие.
+                            Это процесс создания дизайна веб-сайтов, созданный для удобства пользователя и&nbsp;решения бизнес-задач.<br> Сайты должны быть понятными и&nbsp;удобными, ведь чем понятнее сайт, тем быстрее пользователь совершит целевое действие.
                         </p>
                     </div>
                 </li>
                 <li class="services-list__item">
                     <div class="services-list__img">
-                        <img src="./resources/services-img__html.png" alt="Пример работы" class="services-list__picture">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="./resources/services-html-mob.png">
+                            <img src="./resources/services-img__html.png" alt="Пример работы" class="services-list__picture">
+                        </picture>
                     </div>
-                    <div class="services-list__text">
+                    <div class="services-list__text flex">
                         <h3 class="services-list__title">
                             Верстка сайтов
                         </h3>
@@ -179,10 +243,13 @@
                     </div>
                 </li>
                 <li class="services-list__item">
-                    <div class="services-list__img">
-                        <img src="./resources/services-mob-dev.png" alt="Пример работы" class="services-list__picture">
+                    <div class="services-list__img mob-dev">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="./resources/services-mob-mob.png">
+                            <img src="./resources/services-mob-dev.png" alt="Пример работы" class="services-list__picture">
+                        </picture>
                     </div>
-                    <div class="services-list__text">
+                    <div class="services-list__text flex">
                         <h3 class="services-list__title">
                             Разработка мобильного интерфейса
                         </h3>
@@ -195,39 +262,64 @@
         </div>
     </section>
 
-    <section id="contacts" class="contacts section-offsets">
-        <div class="container flex">
-            <div class="contacts-left">
-                <h3 class="contacts-left__title">
-                    для связи:
-                </h3>
-                <p class="contacts-left__link">
-                    <a href="https://www.instagram.com/sakharevich_v.s?utm_source=qr&igsh=YmhkZzMxeHU5aTRr" class="contacts-left__social">instagram</a>
-                </p>
-                <p class="contacts-left__link">
-                    <a href="https://t.me/ZUCKERVO" class="contacts-left__social">telegram</a>
-                </p>
-                <p class="contacts-left__link">
-                    <a href="mailto:vova.saharevich2014@gmail.com" class="contacts-left__social">mail</a>
-                </p>
+    <section id="contacts" class="contacts">
+        <div class="container">
+            <div class="contacts__text flex">
+                <form class="contacts-form flex">
+                    <h3 class="contacts-form__title">
+                        Для связи со мной заполните простую форму
+                    </h3>
+                    <div class="form__inputs">
+                        <input type="text" class="contacts__input" placeholder="Имя Фамилия">
+                        <input type="email" class="contacts__input" placeholder="example@mail.com">
+                    </div>
+                    <button type="submit" class="contacts__btn">Отправить</button>
+                </form>
+                <div class="contacts-right"></div>
             </div>
-            <div class="contacts-right"></div>
+            
         </div>
     </section>
     </main>
 
     <footer class="footer">
         <div class="container">
-            <p class="footer__page">
-                Портфолио фронтенд-разработчика Вовы Сахаревич)
-            </p>
-            <p class="footer__other">
-                Все права защищены. 2024
-            </p>
-            <a href="#head" class="footer__link">
-                В начало)
-            </a>
+            <div class="footer__text flex">
+                <div class="footer__top flex">
+                    <p class="footer__page">
+                        Портфолио фронтенд-разработчика Вовы Сахаревич)
+                    </p>
+                    <ul class="footer__list flex">
+                        <li class="footer__item">
+                            <a href="mailto:vova.saharevich2014@gmail.com" class="footer__link">
+                                mail
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="t.me/@ZUCKERVO" class="footer__link">
+                                telegram
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="https://www.instagram.com/sakharevich_v.s?utm_source=qr&igsh=YmhkZzMxeHU5aTRr" class="footer__link">
+                                instagram
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__bottom flex">
+                    <p class="footer__other">
+                        Все права защищены. 2024
+                    </p>
+                    <p class="footer__info">
+                        политика обработки данных
+                    </p>
+                </div>
+            </div>
+            
         </div>
     </footer>
+
+    <script src="burger.js"></script>
 </body>
 </html>
