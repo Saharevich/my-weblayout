@@ -22,3 +22,15 @@ function toggleBurger() {
     bodyNode2.classList.toggle(BODY_FIXED_CLASSNAME_2);
     burgerBtnNode.classList.toggle(BURGER_BTN_OPENED_CLASSNAME);
 }
+
+function closeBurgerOnLinkClick() {
+    const MENU_BURGER = document.querySelectorAll('.burger__link');
+
+    MENU_BURGER.forEach(link => {
+        link.addEventListener('click', () => {
+            toggleBurger();
+        });
+    });
+}
+
+closeBurgerOnLinkClick();
