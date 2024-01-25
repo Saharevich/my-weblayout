@@ -1,7 +1,7 @@
 .main__descr {
     margin-bottom: 29px;
     align-items: start;
-    width: 60%;
+    max-width: 80%;
     font-size: 20px;
     line-height: 26px;
 }
